@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Currancy Converter</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <h1 class="h1">Currency Converter</h1>
+      <label class="p">Enter Amount</label><br>
+      <input  class="input" placeholder="Enter The Amount" type="text">
+       <div class="text">
+         <p>From</p>
+         <p>To</p>
+       </div>
+      <div class="dropdown">
+        <div>
+         
+          <div class="flex">
+            <img class="img" id="img1" src="https://flagsapi.com/US/flat/64.png">
+            <select onchange="ch()" id="fromex" class="sel">
+              
+             
+            </select>
+          </div>
+        </div>
+        <img class="img1" onclick="s()" src="https://cdn-icons-png.flaticon.com/128/3580/3580097.png">
+        <div>
+         
+          <div class="flex">
+            <img class="img" id="img2" src="https://cdn-icons-png.flaticon.com/128/206/206606.png">
+            <select onchange="ch()" id="toex" class="sel" >
+             
+            </select>
+          </div>
+        </div>
+
+      </div>
+      <div>
+       <p class="h3"></p>
+      </div>
+      <div>
+        <button onclick="f()" class="btn" >Get Exchange Rate</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
